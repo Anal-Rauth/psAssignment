@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  /* background-color: r(104, 96, 84); */
+  /* height: 100%; */
+  /* width: 100%; */
+  /* overflow: hidden; */
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+ body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+
+ }
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-basis: content;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: black;
+  color: white;
+  height: 80px;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar {
+  display: flex;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+}
+
+.header-items {
+  display: flex;
+  align-items: center;
+  /* gap: 20px; */
+}
+
+.header-item {
+  margin: 10px;
+}
+
+.header-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-item a:hover {
+  color: skyblue;
+}
+
+.circle {
+  height: 35px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: skyblue;
+}
+
+.sidebar-container {
+  margin-left: 250px;
+  padding-top: 80px; /* Add top padding to avoid collision with the Header */
+}
+
+.sidebar {
+  background-color: #2f3136;
+  color: #fff;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  padding-top: 90px;
+  gap: 30px;
+  overflow: scroll;
+}
+
+/* .sidebar-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: black;
+  color: white;
+} */
+
+.sidebar-search {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.sidebar-search input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.sidebar-search input::placeholder {
+  color: rgb(156, 156, 156);
+}
+
+.sidebar-search button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.sidebar-search button i {
+  color: white;
+  font-size: 20px;
+}
+
+.sidebar-search button:hover {
+  opacity: 0.8;
+}
+
+.sidebar-item {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebar-item:hover {
+  background-color: rgba(41, 40, 40, 0.1);
+}
+
+.sidebar-item-icon {
+  font-size: 24px;
+  color: white;
+}
+
+.sidebar-item-title {
+  color: white;
+  font-size: 16px;
+}
+
+
+.map , .w-full{
+  width: 100%;
+}
+
+.mapboxgl-ctrl  {
+  visibility: hidden;
+}
+
+.h-full {
+  height: 100vh;
+}
+/* .map {
+  position: absolute;
+  top: 60px;
+  left: 250px;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+} */
+
+/* .sidebar-items .sidebar-item-odd {
+  background-color: black;
+  color: white;
+} */
+
+@media (min-width: 768px) {
+  .header-content {
+    gap: 50px;
+    padding-left: 50px;
+  }
+
+  .header-items {
+    gap: 70px;
+  }
+}
+
+@media (min-width: 992px) {
+  .header-content {
+    gap: 100px;
+    padding-left: 100px;
+  }
+
+  .header-items {
+    gap: 120px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-content {
+    gap: 290px;
+    padding-left: 120px;
+  }
+
+  .header-items {
+    gap: 300px;
+  }
+}
+@media (min-width: 1630px) {
+  .header-content {
+    gap: 295px;
+    padding-left: 109px;
+  }
+
+  .header-items {
+    gap: 300px;
+  }
+}
+@media (min-width: 1540px) {
+  .header-content {
+    gap: 251px;
+    padding-left: 109px;
+  }
+
+  .header-items {
+    gap: 300px;
+  }
+}
+@media (min-width: 1390px) {
+  .header-content {
+    gap: 200px;
+    padding-left: 109px;
+  }
+
+  .header-items {
+    gap: 250px;
+  }
+}
+@media (min-width: 1273px) {
+  .header-content {
+    gap: 150px;
+    padding-left: 10px;
+    margin: 10px;
+  }
+}
+  .header-items {
+    gap: 50px;
+
+}
